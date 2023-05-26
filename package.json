@@ -79,7 +79,7 @@
     "yaml": "^2.3.0"
   },
   "scripts": {
-    "product_tail": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch"
   },
   "author": "",
   "license": "ISC"

@@ -852,10 +852,6 @@ video {
     width: 100%;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
   .sm\:justify-center {
     justify-content: center;
   }
@@ -874,10 +870,6 @@ video {
 
   .sm\:pl-10 {
     padding-left: 2.5rem;
-  }
-
-  .sm\:align-middle {
-    vertical-align: middle;
   }
 
   .sm\:text-6xl {
