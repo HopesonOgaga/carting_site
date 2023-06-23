@@ -67,15 +67,36 @@
         <div class="w-2/5">
           <!-- images -->
           <img
-            class="w-full md: rounded-lg mb-6"
+            class=" md:w-full md: rounded-lg mb-6"
             src="/build/images/image-product-1.jpg"
             alt=""
           />
-          <div id="wrapper" class="md:whitespace-nowrap flex ">
-            <img src="./images/image-product-1.jpg" alt="" srcset="">
-            <img src="./images/image-product-2.jpg" alt="" srcset="">
-            <img src="./images/image-product-3.jpg" alt="" srcset="">
-            <img src="./images/image-product-1.jpg" alt="" srcset="">
+          <div
+            id="wrapper"
+            class="overflow-hidden md:whitespace-nowrap cursor-pointer relative  "
+          >
+          <!-- arrow left -->
+            <img
+              class="w-6 bg-slate-300 rounded-full align-middle cursor-pointer absolute -left-23 translate-y-20"
+              src="/nav_images/left-chevron.png"
+              alt=""
+              srcset=""
+            />
+            <div
+              class="flex  md:whitespace-nowrap h-40 w-2/3 object-cover gap-4"
+            >
+              <img src="./images/image-product-1.jpg" alt="" srcset="" />
+              <img src="./images/image-product-2.jpg" alt="" srcset="" />
+              <img src="./images/image-product-3.jpg" alt="" srcset="" />
+              <img src="./images/image-product-1.jpg" alt="" srcset="" />
+            </div>
+            <!-- arrow right -->
+            <img
+              class="w-6 bg-slate-300 rounded-full align-middle cursor-pointer -translate-y-20 -right-0  absolute active:shadow-lg active:bg-slate-300 "
+              src="/nav_images/chevron.png"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
 
