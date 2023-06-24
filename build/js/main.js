@@ -46,7 +46,7 @@ decrement.addEventListener("click", function () {
   console.log(incNumber);
   numberBtn.textContent = incNumber;
   cart_new = 128 / incNumber;
-  cart_final.textContent = cart_new;
+  cart_final.textContent = cart_new.toFixed(2);
 });
 
 nextButton.addEventListener("click", () => {
