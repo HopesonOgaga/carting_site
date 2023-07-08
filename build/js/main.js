@@ -9,6 +9,7 @@ const numberBtn = document.querySelector(".number_btn");
 // classes
 const cart_image = document.querySelector(".cartimage");
 const check_div = document.querySelector(".checkdiv");
+const avatar = document.querySelector(".avatar");
 // cart number manipulation
 const cart_number = document.querySelector(".cart_number");
 const cart_mul = document.querySelector(".cart_mul");
@@ -24,9 +25,10 @@ cart_number.textContent = `$${number_value}.00`;
 
 // classes
 check_div.classList.add("hidden");
-cart_image.addEventListener("click", function () {
-  check_div.classList.toggle("hidden");
-});
+function classes () {
+    check_div.classList.toggle("hidden");
+  }
+
 // btn functions
 function inc_number() {
   incNumber = incNumber + 1;
@@ -60,3 +62,5 @@ prevButton.addEventListener("click", () => {
 });
 
 // cart multiplication
+cart_image.addEventListener("click",classes );
+avatar.addEventListener('click', classes)
