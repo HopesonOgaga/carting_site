@@ -17,7 +17,11 @@ const span_number = document.querySelector(".span_number");
 const cart_value = document.querySelector(".cart_value");
 const cart_final = document.querySelector(".cart_final");
 
+const main_image = document.querySelectorAll('main_image')
+
+
 let incNumber = 0;
+
 //cart function
 const number = span_number.textContent;
 const number_value = Number(number);
@@ -51,15 +55,7 @@ decrement.addEventListener("click", function () {
   cart_final.textContent = cart_new.toFixed(2);
 });
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slides[0].clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
 
-prevButton.addEventListener("click", () => {
-  const slideWidth = slides[0].clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
 
 // cart multiplication
 cart_image.addEventListener("click",classes );
