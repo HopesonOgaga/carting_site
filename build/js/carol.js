@@ -18,11 +18,10 @@ prev.addEventListener("click", goPrev);
 
 
 const size = () =>{
-    if (Window.innerWidth < 600){
+    if (window.innerWidth < 600){
         image.style.display = 'none'
     }else {
         image.style.display = 'block'
     }
 }
 
-window.addEventListener('resize', size)
